@@ -8,4 +8,6 @@ prettier.config.js 是配置vscode 中 插件 prettier 的文件
 
 .env-cmdrc 是插件 env-cmd插件文件，可以配置一些参数 比如开发环境的 端口，注意 package.json 文件中的'script' 中的 配置
 
-状态管理  yarn add redux redux-saga react-router-dom redux-saga-routines
+状态管理  yarn add redux react-redux redux-saga react-router-dom redux-saga-routines
+
+react-redux 不支持ts,要下载另外一个包 yarn add -D @types/react-redux
