@@ -44,6 +44,7 @@
   },
   "devDependencies": {
     "@types/react-redux": "^7.1.9",
+    "@types/redux-saga-routines": "^3.1.0",
     "babel-plugin-import": "^1.13.0",
     "customize-cra": "^1.0.0",
     "env-cmd": "^10.1.0",

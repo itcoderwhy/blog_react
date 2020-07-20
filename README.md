@@ -10,4 +10,9 @@ prettier.config.js 是配置vscode 中 插件 prettier 的文件
 
 状态管理  yarn add redux react-redux redux-saga react-router-dom redux-saga-routines
 
-react-redux 不支持ts,要下载另外一个包 yarn add -D @types/react-redux
+react-redux 不支持ts,要下载另外一个包 yarn add -D @types/react-redux @types/redux-saga-routines
+
+在redux-saga 有一个扩展saga的文件，暂时没有搞清楚
+
+#### 第二天
+配置saga的action--太复杂了
