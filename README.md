@@ -16,3 +16,10 @@ react-redux 不支持ts,要下载另外一个包 yarn add -D @types/react-redux 
 
 #### 第二天
 配置saga的action--太复杂了
+
+### 第三天
+配置redux-thunk 
+yarn add redux-thunk redux-logger
+
+redux-logger 配合typescript 还需要安装一个插件
+yarn add  @types/redux-logger

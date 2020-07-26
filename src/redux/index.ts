@@ -4,6 +4,9 @@
 import { createStore, applyMiddleware, compose } from 'redux'
 // saga 中间件
 import createSagaMiddleware from 'redux-saga'
+// thunk 中间件
+import thunk from 'redux-thunk'
+import logger from 'redux-logger'
 
 import rootReducer from './reducer'
 import rootSaga from './saga/sagas/index'
@@ -18,7 +21,7 @@ const composeEnhancer = (window as any).__REDUC_DEVTOOLS_EXTENSION_COMPOSE__
 
 const store = createStore(
 	rootReducer,
-	composeEnhancer(applyMiddleware(sagaMiddleware))
+	composeEnhancer(applyMiddleware(sagaMiddleware, thunk, logger))
 )
 
 sagaMiddleware.run(rootSaga)

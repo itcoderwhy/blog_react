@@ -4,9 +4,11 @@
 
  import { combineReducers } from 'redux'
  import sagaReducer from './saga/reducers'
+ import thunkReducer from './thunk/reducers'
 
  const rootReducer = combineReducers({
-    ...sagaReducer
+    ...sagaReducer,
+    ...thunkReducer
  })
 
  export default rootReducer
